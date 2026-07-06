@@ -168,8 +168,8 @@ a { color: inherit; text-decoration: none; }
 .section-desc { color: var(--muted); margin-top: 12px; max-width: 560px; }
 
 /* ============ About ============ */
-#about { max-width: 1360px; }
-.about-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(540px, 1fr); gap: clamp(40px, 4vw, 58px); align-items: start; }
+#about { max-width: 1480px; }
+.about-grid { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(620px, 1fr); gap: clamp(40px, 4vw, 58px); align-items: start; }
 .about-text p { color: var(--muted); margin-bottom: 18px; font-size: 1.05rem; }
 .about-text strong { color: var(--text); }
 .about-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 26px; }
@@ -185,8 +185,8 @@ a { color: inherit; text-decoration: none; }
 .about-card .btn { margin-top: 20px; }
 
 @media (min-width: 861px) {
-  .about-card { margin-top: -150px; }
-  html[lang="th"] .card-row-basic-lang span,
+  .about-card { margin-top: -232px; }
+  .card-row-basic-lang span,
   .card-row-education b {
     white-space: nowrap;
   }
