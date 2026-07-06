@@ -66,8 +66,8 @@ document.querySelectorAll(".stat b[data-count]").forEach((el) => statObserver.ob
 
 // ===== Language switch (TH / EN) =====
 const typeWords = {
-  th: ["ใช้งานได้จริง", "เชื่อมต่อ IoT", "สวยและลื่นไหล", "ขับเคลื่อนธุรกิจ"],
-  en: ["actually work", "connect IoT", "look & feel great", "power business"],
+  th: ["สร้างระบบที่ใช้งานได้จริง", "เชื่อมต่อ IoT เข้ากับเว็บ", "ออกแบบเว็บที่สวยและลื่นไหล", "พัฒนาระบบที่ขับเคลื่อนธุรกิจ"],
+  en: ["build systems that actually work", "connect IoT to the web", "craft smooth digital experiences", "power real business workflows"],
 };
 let currentLang = localStorage.getItem("lang") || "th";
 
