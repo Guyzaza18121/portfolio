@@ -14,8 +14,6 @@
 2. รันคำสั่งในโฟลเดอร์นี้:
 
 ```powershell
-git remote add origin https://github.com/Guyzaza18121/portfolio.git
-git branch -M main
 git push -u origin main
 ```
 
@@ -35,4 +33,3 @@ https://guyzaza18121.github.io/portfolio/
 3. ไม่ต้องใส่ build command
 4. ตั้ง Output Directory เป็น `.`
 5. Deploy
-
