@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สิรวิชญ์ ทิมสุวรรณ — Full-Stack Developer</title>
+  <meta name="description" content="พอร์ตโฟลิโอของ สิรวิชญ์ ทิมสุวรรณ — Full-Stack & IoT Developer ผู้สร้างระบบจัดการธุรกิจ, Dashboard IoT และเว็บแอปพลิเคชัน 3D" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+  <div class="bg-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-mark">SW</span>
+      <span class="logo-text">สิรวิชญ์<em>.dev</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-en="About">เกี่ยวกับ</a>
+      <a href="#projects" data-en="Projects">ผลงาน</a>
+      <a href="#skills" data-en="Skills">ทักษะ</a>
+      <a href="#contact" data-en="Contact">ติดต่อ</a>
+      <a href="https://github.com/Guyzaza18121" target="_blank" rel="noopener" class="nav-cta">GitHub</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-opt active" data-lang="th">TH</span>
+        <span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="เมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal">
+          <span class="status-dot"></span> <span data-en="Open to work &amp; new projects">เปิดรับงาน &amp; โปรเจกต์ใหม่</span>
+        </p>
+        <h1 class="hero-title reveal">
+          <span data-en="Hi, I'm ">สวัสดีครับ ผม </span><span class="gradient-text nowrap" data-en="Sirawit&nbsp;Timsuwan">สิรวิชญ์&nbsp;ทิมสุวรรณ</span><br />
+          <span data-en="Building systems that ">สร้างระบบที่ </span><span class="type-target" id="typeTarget"></span><span class="type-cursor">|</span>
+        </h1>
+        <p class="hero-sub reveal" data-en="Full-Stack &amp; IoT Developer — specialized in building business management systems, real-time dashboards, and web applications that work in the real industrial world.">
+          Full-Stack &amp; IoT Developer — เชี่ยวชาญการสร้างระบบจัดการธุรกิจ,
+          Dashboard แบบเรียลไทม์ และเว็บแอปพลิเคชันที่ใช้งานได้จริงในโลกอุตสาหกรรม
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary" data-en="View all projects →">ดูผลงานทั้งหมด →</a>
+          <a href="#contact" class="btn btn-ghost" data-en="Contact me">ติดต่อผม</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><b data-count="5">0</b><span data-en="Featured projects">โปรเจกต์เด่น</span></div>
+          <div class="stat"><b data-count="10">0</b><span data-en="Technologies">เทคโนโลยี</span></div>
+          <div class="stat"><b data-count="100" data-suffix="%">0</b><span data-en="Fully committed">ทุ่มเทเต็มที่</span></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="section-tag" data-en="01 — About me">01 — เกี่ยวกับผม</span>
+        <h2 data-en="Building software that solves real problems">สร้างซอฟต์แวร์ที่แก้ปัญหาจริง</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-en="I'm a developer passionate about turning complex problems into <strong>simple, usable systems</strong> — from back-office systems for shops to dashboards that control factory IoT devices via MQTT and Node-RED.">
+            ผมเป็นนักพัฒนาที่หลงใหลในการเปลี่ยนปัญหาที่ซับซ้อนให้กลายเป็นระบบที่
+            <strong>เรียบง่ายและใช้งานได้จริง</strong> ตั้งแต่ระบบหลังบ้านสำหรับร้านค้า
+            ไปจนถึง Dashboard ควบคุมอุปกรณ์ IoT ในโรงงานผ่าน MQTT และ Node-RED
+          </p>
+          <p data-en="I work across <strong>Frontend, Backend, and device integration</strong>, focusing on user experience, stability, and deployment that is production-ready on real servers.">
+            ผมทำงานครบทั้ง <strong>Frontend, Backend และการเชื่อมต่ออุปกรณ์</strong>
+            โดยให้ความสำคัญกับประสบการณ์ผู้ใช้ ความเสถียร และการ Deploy ที่พร้อมใช้งานบน Server จริง
+          </p>
+          <div class="about-highlights">
+            <div class="hl"><span class="hl-ico">◆</span> <span data-en="Business management systems (ERP / POS)">ระบบจัดการธุรกิจ (ERP / POS)</span></div>
+            <div class="hl"><span class="hl-ico">◆</span> <span data-en="IoT Dashboard &amp; Realtime Control">IoT Dashboard &amp; Realtime Control</span></div>
+            <div class="hl"><span class="hl-ico">◆</span> <span data-en="Web 3D Visualization">Web 3D Visualization</span></div>
+            <div class="hl"><span class="hl-ico">◆</span> <span data-en="Deploy on Ubuntu / PM2 / Nginx">Deploy บน Ubuntu / PM2 / Nginx</span></div>
+          </div>
+        </div>
+        <aside class="about-card reveal">
+          <div class="card-row"><span data-en="Name">ชื่อ</span><b data-en="Sirawit Timsuwan">สิรวิชญ์ ทิมสุวรรณ</b></div>
+          <div class="card-row"><span data-en="Role">บทบาท</span><b>Full-Stack / IoT Dev</b></div>
+          <div class="card-row"><span data-en="Core stack">สแตกหลัก</span><b>React · Node.js · MongoDB</b></div>
+          <div class="card-row"><span data-en="Expertise">เชี่ยวชาญ</span><b>Node-RED · MQTT · 3D Web</b></div>
+          <div class="card-row"><span>GitHub</span><b><a href="https://github.com/Guyzaza18121" target="_blank" rel="noopener">@Guyzaza18121</a></b></div>
+          <a href="https://github.com/Guyzaza18121" target="_blank" rel="noopener" class="btn btn-primary btn-block" data-en="View code on GitHub">ดูโค้ดบน GitHub</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <span class="section-tag" data-en="02 — Projects">02 — ผลงาน</span>
+        <h2 data-en="Projects I'm proud of">โปรเจกต์ที่ผมภูมิใจ</h2>
+        <p class="section-desc" data-en="Every piece is built for real use — click to view the source code on GitHub">ทุกชิ้นถูกสร้างขึ้นเพื่อใช้งานจริง — คลิกเพื่อดูซอร์สโค้ดบน GitHub</p>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter active" data-filter="all" data-en="All">ทั้งหมด</button>
+        <button class="filter" data-filter="fullstack">Full-Stack</button>
+        <button class="filter" data-filter="iot">IoT</button>
+        <button class="filter" data-filter="web">Web App</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Jewelry Admin -->
+        <article class="project-card reveal" data-cat="fullstack">
+          <div class="pc-top">
+            <div class="pc-icon icon-jewel">◈</div>
+            <span class="pc-badge">Full-Stack</span>
+          </div>
+          <h3>Jewelry Admin</h3>
+          <p class="pc-desc" data-en="A complete back-office system for a jewelry shop — manage products, categories and sizes, print Thai cost sheets, generate PDF reports, and import/export Excel.">ระบบหลังบ้านจัดการร้านเครื่องประดับครบวงจร — จัดการสินค้า หมวดหมู่และไซส์
+            พิมพ์ใบต้นทุน (Cost Sheet) ภาษาไทย ออกรายงาน PDF และนำเข้า/ส่งออก Excel</p>
+          <ul class="pc-features">
+            <li data-en="Print product cost sheets via Windows printer">พิมพ์ต้นทุนสินค้าผ่านเครื่องพิมพ์ Windows</li>
+            <li data-en="Sales reports with Chart.js graphs">รายงานยอดขายด้วยกราฟ Chart.js</li>
+            <li data-en="Generate Thai PDFs with pdf-lib">สร้าง PDF ภาษาไทยด้วย pdf-lib</li>
+          </ul>
+          <div class="pc-tags">
+            <span>React 18</span><span>Tailwind</span><span>Chart.js</span>
+            <span>Node/Express</span><span>MongoDB</span><span>jsPDF</span>
+          </div>
+          <a class="pc-link" href="https://github.com/Guyzaza18121/jewelry-just-local-before-online" target="_blank" rel="noopener"><span data-en="View project">ดูโปรเจกต์</span> <span>↗</span></a>
+        </article>
+
+        <!-- StockFlow -->
+        <article class="project-card reveal" data-cat="fullstack">
+          <div class="pc-top">
+            <div class="pc-icon icon-stock">▦</div>
+            <span class="pc-badge">Full-Stack</span>
+          </div>
+          <h3>StockFlow — BEST Management</h3>
+          <p class="pc-desc" data-en="An enterprise-grade sales and expense management system storing data in MongoDB, with user roles and activity logs, running on a real server with PM2.">ระบบจัดการการขายและค่าใช้จ่ายระดับองค์กร เก็บข้อมูลใน MongoDB
+            พร้อมระบบสิทธิ์ผู้ใช้ (Roles) และ Activity Logs รันบน Server จริงด้วย PM2</p>
+          <ul class="pc-features">
+            <li data-en="REST API: Sales, Expenses, Payments, Customers">REST API: Sales, Expenses, Payments, Customers</li>
+            <li data-en="Authentication &amp; Admin permissions">ระบบยืนยันตัวตน &amp; สิทธิ์ Admin</li>
+            <li data-en="Deploy on Ubuntu + PM2 + Nginx">Deploy บน Ubuntu + PM2 + Nginx</li>
+          </ul>
+          <div class="pc-tags">
+            <span>Node.js</span><span>Express</span><span>MongoDB</span>
+            <span>JWT Auth</span><span>PM2</span><span>Nginx</span>
+          </div>
+          <a class="pc-link" href="https://github.com/Guyzaza18121/stockflow" target="_blank" rel="noopener"><span data-en="View project">ดูโปรเจกต์</span> <span>↗</span></a>
+        </article>
+
+        <!-- IoT Dashboard -->
+        <article class="project-card reveal" data-cat="iot">
+          <div class="pc-top">
+            <div class="pc-icon icon-iot">◉</div>
+            <span class="pc-badge">IoT</span>
+          </div>
+          <h3>IoT Mobile Dashboard (FOSTEC OEE)</h3>
+          <p class="pc-desc" data-en="A real-time factory device monitoring and control dashboard, pulling data via Node-RED — showing Pressure, Power, Flowrate, and Efficiency.">แดชบอร์ดมอนิเตอร์และควบคุมอุปกรณ์ในโรงงานแบบเรียลไทม์
+            ดึงข้อมูลผ่าน Node-RED — แสดง Pressure, Power, Flowrate และ Efficiency</p>
+          <ul class="pc-features">
+            <li data-en="Control air compressors / electric valves (Open/Close)">ควบคุมปั๊มลม / วาล์วไฟฟ้า (Open/Close)</li>
+            <li data-en="Alarm system with acknowledge flow">ระบบแจ้งเตือน (Alarm) พร้อม Acknowledge</li>
+            <li data-en="Real-time polling from Node-RED">Polling เรียลไทม์จาก Node-RED</li>
+          </ul>
+          <div class="pc-tags">
+            <span>React 19</span><span>Vite 8</span><span>Node-RED</span>
+            <span>MQTT</span><span>lucide-react</span>
+          </div>
+          <a class="pc-link" href="https://github.com/Guyzaza18121/dashboard-fostec-oee-" target="_blank" rel="noopener"><span data-en="View project">ดูโปรเจกต์</span> <span>↗</span></a>
+        </article>
+
+        <!-- 3D Web App -->
+        <article class="project-card reveal" data-cat="iot web">
+          <div class="pc-top">
+            <div class="pc-icon icon-3d">◇</div>
+            <span class="pc-badge">3D · IoT</span>
+          </div>
+          <h3>3D Models Web Application</h3>
+          <p class="pc-desc" data-en="A web app that renders 3D models with freely configurable views, connected to Node-RED and controlling devices through the MQTT protocol.">เว็บแอปแสดงผลโมเดล 3 มิติที่ตั้งค่ามุมมองได้อิสระ
+            เชื่อมต่อกับ Node-RED และสั่งการอุปกรณ์ผ่านโปรโตคอล MQTT</p>
+          <ul class="pc-features">
+            <li data-en="Place objects and adjust views interactively">วาง Object และปรับ View แบบอินเทอร์แอกทีฟ</li>
+            <li data-en="Connect to Node-RED for real-time control">เชื่อมต่อ Node-RED สั่งการเรียลไทม์</li>
+            <li data-en="Communicate with devices via MQTT">สื่อสารอุปกรณ์ผ่าน MQTT</li>
+          </ul>
+          <div class="pc-tags">
+            <span>3D Web</span><span>Node-RED</span><span>MQTT</span><span>JavaScript</span>
+          </div>
+          <a class="pc-link" href="https://github.com/Guyzaza18121/3D-Models-Web-Application-" target="_blank" rel="noopener"><span data-en="View project">ดูโปรเจกต์</span> <span>↗</span></a>
+        </article>
+
+        <!-- Novels -->
+        <article class="project-card reveal" data-cat="web">
+          <div class="pc-top">
+            <div class="pc-icon icon-novel">✎</div>
+            <span class="pc-badge">Web App</span>
+          </div>
+          <h3>Novels — <span data-en="Novel Writing Platform">ระบบเขียนนิยาย</span></h3>
+          <p class="pc-desc" data-en="A platform for writers to create and manage their novels, designed for a smooth, content-focused experience.">แพลตฟอร์มสำหรับนักเขียนในการสร้างสรรค์และจัดการงานเขียนนิยาย
+            ออกแบบให้ใช้งานลื่นไหลและโฟกัสกับเนื้อหา</p>
+          <ul class="pc-features">
+            <li data-en="Write and manage novel chapters">ระบบเขียนและจัดการตอนของนิยาย</li>
+            <li data-en="A reading/writing-focused interface">อินเทอร์เฟซที่เน้นการอ่าน/เขียน</li>
+            <li data-en="Structured to extend into an online system">โครงสร้างพร้อมต่อยอดสู่ระบบออนไลน์</li>
+          </ul>
+          <div class="pc-tags">
+            <span>Web App</span><span>JavaScript</span><span>UI/UX</span>
+          </div>
+          <a class="pc-link" href="https://github.com/Guyzaza18121/Novels" target="_blank" rel="noopener"><span data-en="View project">ดูโปรเจกต์</span> <span>↗</span></a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-tag" data-en="03 — Skills">03 — ทักษะ</span>
+        <h2 data-en="The tools I use">เครื่องมือที่ผมใช้</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-col reveal">
+          <h4>Frontend</h4>
+          <div class="chips">
+            <span>React 18/19</span><span>Vite</span><span>Tailwind CSS</span>
+            <span>Chart.js</span><span>Lucide</span><span>HTML5</span><span>CSS3</span>
+          </div>
+        </div>
+        <div class="skill-col reveal">
+          <h4>Backend</h4>
+          <div class="chips">
+            <span>Node.js</span><span>Express</span><span>MongoDB</span>
+            <span>Mongoose</span><span>REST API</span><span>JWT</span>
+          </div>
+        </div>
+        <div class="skill-col reveal">
+          <h4 data-en="IoT &amp; DevOps">IoT &amp; DevOps</h4>
+          <div class="chips">
+            <span>Node-RED</span><span>MQTT</span><span>PM2</span>
+            <span>Nginx</span><span>Ubuntu</span><span>3D Web</span>
+          </div>
+        </div>
+        <div class="skill-col reveal">
+          <h4 data-en="Documents &amp; Data">เอกสาร &amp; ข้อมูล</h4>
+          <div class="chips">
+            <span>pdf-lib</span><span>jsPDF</span><span>xlsx / Excel</span>
+            <span>pdf-to-printer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <span class="section-tag" data-en="04 — Contact">04 — ติดต่อ</span>
+        <h2 data-en="Let's build something awesome together">มาสร้างอะไรเจ๋งๆ ด้วยกัน</h2>
+        <p data-en="Interested in working together or want to discuss a project? Reach out anytime.">สนใจร่วมงาน หรืออยากปรึกษาโปรเจกต์? ทักมาได้เลยครับ</p>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:guyzaza18121@gmail.com">
+            <span class="ci-ico">✉</span>
+            <span class="ci-text"><b data-en="Email">อีเมล</b>guyzaza18121@gmail.com</span>
+          </a>
+          <a class="contact-item" href="tel:0822477233">
+            <span class="ci-ico">☎</span>
+            <span class="ci-text"><b data-en="Phone">โทรศัพท์</b>082-247-7233</span>
+          </a>
+          <a class="contact-item" href="https://www.facebook.com/kai.lovezaza.3?locale=th_TH" target="_blank" rel="noopener">
+            <span class="ci-ico">f</span>
+            <span class="ci-text"><b>Facebook</b>kai.lovezaza.3</span>
+          </a>
+          <a class="contact-item" href="https://github.com/Guyzaza18121" target="_blank" rel="noopener">
+            <span class="ci-ico">⌥</span>
+            <span class="ci-text"><b>GitHub</b>@Guyzaza18121</span>
+          </a>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:guyzaza18121@gmail.com" class="btn btn-primary" data-en="Email me">ส่งอีเมลหาผม</a>
+          <a href="https://www.facebook.com/kai.lovezaza.3?locale=th_TH" target="_blank" rel="noopener" class="btn btn-ghost" data-en="Message on Facebook">ทักผ่าน Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span data-en="© &lt;YEAR&gt; Sirawit Timsuwan — Built with ❤️ and clean code">© <span id="year"></span> สิรวิชญ์ ทิมสุวรรณ — สร้างด้วย ❤️ และโค้ดที่สะอาด</span></p>
+    <a href="#hero" class="to-top" data-en="Back to top ↑">กลับขึ้นบน ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

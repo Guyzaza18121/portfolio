@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local editor and environment files
+.vscode/
+.idea/
+.env
+.env.local
+.env.*.local
+
+# Dependency/build folders if this site is converted later
+node_modules/
+dist/
+build/
