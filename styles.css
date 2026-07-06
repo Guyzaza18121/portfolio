@@ -168,20 +168,29 @@ a { color: inherit; text-decoration: none; }
 .section-desc { color: var(--muted); margin-top: 12px; max-width: 560px; }
 
 /* ============ About ============ */
-.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
+#about { max-width: 1360px; }
+.about-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(540px, 1fr); gap: clamp(40px, 4vw, 58px); align-items: start; }
 .about-text p { color: var(--muted); margin-bottom: 18px; font-size: 1.05rem; }
 .about-text strong { color: var(--text); }
 .about-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 26px; }
 .hl { display: flex; align-items: center; gap: 10px; padding: 12px 15px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); font-size: .92rem; transition: .25s; }
 .hl:hover { border-color: var(--border-hover); transform: translateY(-2px); }
 .hl-ico { color: var(--accent); }
-.about-card { padding: 28px; border: 1px solid var(--border); border-radius: var(--radius); background: linear-gradient(160deg, var(--surface-2), var(--surface)); box-shadow: var(--shadow); }
+.about-card { min-width: 0; padding: 32px 34px; border: 1px solid var(--border); border-radius: var(--radius); background: linear-gradient(160deg, var(--surface-2), var(--surface)); box-shadow: var(--shadow); }
 .card-row { display: flex; justify-content: space-between; gap: 18px; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: .95rem; }
 .card-row span { color: var(--muted-2); flex: 1 1 36%; min-width: 0; overflow-wrap: anywhere; }
 .card-row b { flex: 1 1 64%; min-width: 0; text-align: right; overflow-wrap: anywhere; }
 .card-value-stack { line-height: 1.55; }
 .card-row a { color: var(--accent-2); }
 .about-card .btn { margin-top: 20px; }
+
+@media (min-width: 861px) {
+  .about-card { margin-top: -150px; }
+  html[lang="th"] .card-row-basic-lang span,
+  .card-row-education b {
+    white-space: nowrap;
+  }
+}
 
 /* ============ Filters ============ */
 .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 34px; }
@@ -256,6 +265,7 @@ a { color: inherit; text-decoration: none; }
 /* ============ Responsive ============ */
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; }
+  .about-card { padding: 28px; }
   .nav-links { position: fixed; top: 68px; right: 16px; left: 16px; flex-direction: column; align-items: stretch; gap: 6px; padding: 16px; background: rgba(11,13,24,.96); backdrop-filter: blur(16px); border: 1px solid var(--border); border-radius: 16px; transform: translateY(-14px); opacity: 0; pointer-events: none; transition: .3s; }
   .nav-links a { padding: 12px 14px; border-radius: 10px; }
   .nav-links a:hover { background: var(--surface); }
